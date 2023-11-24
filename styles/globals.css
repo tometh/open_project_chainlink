@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transition-opacity {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-in-out;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ConnectButton.module.css */
+.transparentBackground {
+  background-color: transparent !important;
+}
+
+.uppercaseText {
+  text-transform: uppercase !important;
+}

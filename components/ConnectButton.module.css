@@ -1,0 +1,4 @@
+.customConnectButton {
+  @apply bg-transparent;
+  @apply uppercase;
+}
