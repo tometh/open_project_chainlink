@@ -4,7 +4,7 @@ import RegisteredFunctionsTable from './RegisteredFunctionsTable';
 import { deployedAddresses } from '@/constants';
 import FunctionsKit from 'functions-kit';
 
-const id = 1;
+const id = '1';
 
 const functionKit = new FunctionsKit({
   rpcUrl: process.env.NEXT_PUBLIC_ALCHEMY_URL,
@@ -18,6 +18,8 @@ const tokenType = 'ETH';
 
 const RegisteredFunctions = () => {
   const [functionID, setFunctionID] = useState([]);
+
+  console.log(functionKit)
 
   const getRegisteredFunctions = async () => {
     try {

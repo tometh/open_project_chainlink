@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import DashboardHeader from '@/components/DashboardHeader';
 import History from '@/components/History';
 import FunctionCallChart from '@/components/FunctionCallChart';
-import RegisteredFunctions from '@/components/RegisteredFunctions';
+// import RegisteredFunctions from '@/components/RegisteredFunctions';
 import { useAccount } from 'wagmi';
 import ConnectModal from '@/components/modals/ConnectModal';
 
@@ -32,9 +32,9 @@ const Dashboard = () => {
             <DashboardHeader />
             <History />
             <FunctionCallChart />
-            <div className="bg-white">
+            {/* <div className="bg-white">
               <RegisteredFunctions />
-            </div>
+            </div> */}
           </div>
         )}
         {!isConnected && (
